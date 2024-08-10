@@ -1,0 +1,61 @@
+/* Basic sidebar styling */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    padding-top: 20px;
+    color: #fff;
+    overflow-y: auto; /* Add scrollbar to vertical overflow */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    background-color: #555 !important; /* Important for overriding Bootstrap active state */
+}
+
+#sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Page content */
+#content {
+    margin-left: 250px; /* Adjusted to sidebar width */
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Smooth transition for margin-left */
+}
+
+#info-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
